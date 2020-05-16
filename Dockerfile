@@ -3,11 +3,20 @@ FROM python:3.8-alpine3.11
 MAINTAINER Paul Podgorsek <ppodgorsek@users.noreply.github.com>
 LABEL description Robot Framework in Docker.
 
+# Set the keywords directory environment variable
+ENV ROBOT_KEYWORDS_DIR /opt/robotframework/keywords
+
 # Set the reports directory environment variable
 ENV ROBOT_REPORTS_DIR /opt/robotframework/reports
 
+# Set the settings directory environment variable
+ENV ROBOT_SETTINGS_DIR /opt/robotframework/settings
+
 # Set the tests directory environment variable
 ENV ROBOT_TESTS_DIR /opt/robotframework/tests
+
+# Set the variables directory environment variable
+ENV ROBOT_VARIABLES_DIR /opt/robotframework/variables
 
 # Set the working directory environment variable
 ENV ROBOT_WORK_DIR /opt/robotframework/temp
