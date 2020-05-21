@@ -23,4 +23,4 @@ else
         $ROBOT_TESTS_DIR
 fi
 
-chown -R 1000:1000 $ROBOT_REPORTS_DIR
+#chown -R 1000:1000 $ROBOT_REPORTS_DIR
